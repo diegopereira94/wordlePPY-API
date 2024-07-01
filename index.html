@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>Wordle PPY</title>
+ 		<link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+   </head>
+   <body>   
+
+     <h1>Wordle PPY</h1>
+     <input type="text" id="guess-input" type="text" maxlength="5">
+     <h4 style="color: rgb(138, 137, 137);"><center>Debes ingresar 5 letras (tienes 6 intentos)</center></h4>
+     <button id="guess-button">Intentar</button>
+     
+     <p id="mensajeError"></p>
+     <div id="grid">
+        
+     </div>
+     <!--<p id="guesses"-->
+      
+      <!-- INICIO MODAL DE GANGADOR-->
+      <section class="modal">
+        <div class="modal_container">
+          <img src="images/modal_winner.svg" alt="modal_winner" class="modal_img">
+          <h2 class="modal_title">GANASTE!!!</h2>
+          <p class="modal_paragraph">
+            Muy bien jugado eres Exelente.</p>
+            <a href="#" class="modal_close">Cerrar</a>
+        </div>
+      </section>
+      <!-- FIN MODAL DE GANGADOR-->
+
+      <!-- INICIO MODAL DE PERDEDOR-->
+      <section class="modal_sad">
+        <div class="modal_container_sad">
+          <img src="images/modal_sad.svg" alt="mod_sald" class="modal_img_sad">
+          <h2 class="modal_title_sad">PERDISTE!!!</h2>
+          <p class="modal_paragraph_sad">
+            Se acabaron tus intentos (solo tienes 6 intentos).</p>
+            <a href="#" class="modal_close_sad">Cerrar</a>
+        </div>
+      </section>
+      <!-- FIN MODAL DE PERDEDOR-->
+
+   </body>
+ </html>
